@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/backspace.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="line"></div>
+        <div class="input">
+            <input type="text" id="input" placeholder="0"/>
+        </div>
+        <div class="buttons">
+            <div class="rows row1">
+                <button onclick="Clear()" class="button">C</button>
+                <button onclick="display('%')" class="button"><span>&#37;</span></button>  
+                <button onclick="del()" class="button">Del</button>      <!-- <i class="gg-backspace"></i> -->
+                <button onclick="display('/')" class="button">/</button>
+            </div>
+            <div class="rows row2">
+                <button onclick="display('7')" class="button">7</button>
+                <button onclick="display('8')" class="button">8</button>
+                <button onclick="display('9')" class="button">9</button>
+                <button onclick="display('*')" class="button">*</button>
+            </div>
+            <div class="rows row3">
+                <button onclick="display('4')" class="button">4</button>
+                <button onclick="display('5')" class="button">5</button>
+                <button onclick="display('6')" class="button">6</button>
+                <button onclick="display('-')" class="button">-</button>
+            </div>
+            <div class="rows row4">
+                <button onclick="display('1')" class="button">1</button>
+                <button onclick="display('2')" class="button">2</button>
+                <button onclick="display('3')" class="button">3</button>
+                <button onclick="display('+')" class="button">+</button> 
+
+            </div>
+            <div class="rows row5">
+                <button onclick="display('00')" class="button">00</button>
+                <button onclick="display('0')" class="button">0</button>
+                <button onclick="display('.')" class="button">.</button>
+                <button onclick="Calculate()" class="button">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
